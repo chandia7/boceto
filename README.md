@@ -10,4 +10,4 @@ Microservicios:
 -ms-mantenciones: Un módulo donde el arrendatario puede reportar problemas (ej. falla eléctrica, filtración de agua) y el propietario o administrador gestiona la reparación.
 -ms-visitas: Calendario para que los interesados agenden recorridos presenciales a las propiedades disponibles.
 -ms-notificaciones: Servicio transversal que envía alertas (correos simulados) cuando se aprueba un contrato, se acerca la fecha de pago o se confirma una visita.
--ms-reportes: Recopila datos de otros servicios para generar estadísticas al administrador: total de ingresos mensuales, porcentaje de propiedades vacantes, etc.
+-ms-reportes: Recopila datos de otros servicios para generar estadísticas al administrador: total de ingresos mensuales, porcentaje de propiedades vacantes, etc.mmmm
