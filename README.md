@@ -4,6 +4,7 @@ Microservicios:
 -ms-usuarios: Lógica de registro, login (generación de tokens JWT), encriptación de contraseñas y gestión de los perfiles y roles.
 
 ya esta, falta completarlo nomas
+
   -id, nombre,email,contraseña(esto se debe incriptar), fecha de registro
 
 -ms-propiedades: Catálogo de los inmuebles. Maneja características (metros cuadrados, habitaciones) y ubicación (por ejemplo, filtrando por comunas dentro de la Región Metropolitana).
