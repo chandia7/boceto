@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-04-2026 a las 16:12:39
+-- Tiempo de generación: 29-04-2026 a las 15:45:03
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -24,11 +24,16 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `seguro`
+-- Estructura de tabla para la tabla `credenciales`
 --
 
-CREATE TABLE `seguro` (
-  `ID_SEGURO` int(11) NOT NULL
+CREATE TABLE `credenciales` (
+  `id` bigint(20) NOT NULL,
+  `usuario_id` bigint(20) NOT NULL,
+  `token` varchar(500) DEFAULT NULL,
+  `refresh_token` varchar(500) DEFAULT NULL,
+  `fecha_expiracion` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `activo` tinyint(1) DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -36,10 +41,20 @@ CREATE TABLE `seguro` (
 --
 
 --
--- Indices de la tabla `seguro`
+-- Indices de la tabla `credenciales`
 --
-ALTER TABLE `seguro`
-  ADD PRIMARY KEY (`ID_SEGURO`);
+ALTER TABLE `credenciales`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `credenciales`
+--
+ALTER TABLE `credenciales`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
