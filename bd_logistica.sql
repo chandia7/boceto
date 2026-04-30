@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-04-2026 a las 15:37:03
+-- Tiempo de generación: 30-04-2026 a las 03:27:51
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -24,11 +24,17 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `logistica`
+-- Estructura de tabla para la tabla `envio`
 --
 
-CREATE TABLE `logistica` (
-  `ID_LOGISTICA` int(11) NOT NULL
+CREATE TABLE `envio` (
+  `id_envio` bigint(20) NOT NULL,
+  `pedido_id` bigint(20) NOT NULL,
+  `direccion` varchar(255) NOT NULL,
+  `ciudad` varchar(100) DEFAULT NULL,
+  `estado` varchar(50) DEFAULT 'preparando',
+  `fecha_envio` datetime DEFAULT NULL,
+  `fecha_entrega` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -36,10 +42,20 @@ CREATE TABLE `logistica` (
 --
 
 --
--- Indices de la tabla `logistica`
+-- Indices de la tabla `envio`
 --
-ALTER TABLE `logistica`
-  ADD PRIMARY KEY (`ID_LOGISTICA`);
+ALTER TABLE `envio`
+  ADD PRIMARY KEY (`id_envio`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `envio`
+--
+ALTER TABLE `envio`
+  MODIFY `id_envio` bigint(20) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
