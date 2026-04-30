@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-04-2026 a las 16:02:03
+-- Tiempo de generación: 30-04-2026 a las 03:38:24
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -28,7 +28,13 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `promocion` (
-  `ID_PROMOCION` int(11) NOT NULL
+  `id_promocion` bigint(20) NOT NULL,
+  `nombre` varchar(100) DEFAULT NULL,
+  `descripcion` text DEFAULT NULL,
+  `descuento` decimal(5,2) DEFAULT NULL,
+  `fecha_inicio` date DEFAULT NULL,
+  `fecha_fin` date DEFAULT NULL,
+  `estado` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -39,7 +45,17 @@ CREATE TABLE `promocion` (
 -- Indices de la tabla `promocion`
 --
 ALTER TABLE `promocion`
-  ADD PRIMARY KEY (`ID_PROMOCION`);
+  ADD PRIMARY KEY (`id_promocion`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `promocion`
+--
+ALTER TABLE `promocion`
+  MODIFY `id_promocion` bigint(20) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
