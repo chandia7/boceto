@@ -2,7 +2,7 @@
 
 Microservicios:
 
-listo usuario, reportes, seguimiento, notificaciones, pagos, logistica, seguridad
+listo usuario, reportes, seguimiento, notificaciones, pagos, logistica, seguridad(Falta solo generar el Token JWT)
 
 1.-ms-usuarios: El "directorio". Guarda la información blanda y pública del usuario (nombre, apellido, teléfono, dirección de envío, avatar). 
 
