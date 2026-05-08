@@ -4,6 +4,8 @@ Microservicios:
 
 listo usuario, reportes, seguimiento, notificaciones, pagos, logistica, seguridad(Falta solo generar el Token JWT), promociones, inventario, catalogo.
 
+ms correjidos: 
+
 
 1.-ms-usuarios: El "directorio". Guarda la información blanda y pública del usuario (nombre, apellido, teléfono, dirección de envío, avatar). 
 
