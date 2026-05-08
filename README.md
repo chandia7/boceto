@@ -6,6 +6,18 @@ listo usuario, reportes, seguimiento, notificaciones, pagos, logistica, segurida
 
 ms correjidos: 
 
+si da problemas cambien los puertos ya chatgpt dice que podria dar error si estan en el mismo puerto
+
+Los puertos no deben repetirse
+Cada microservicio debe correr en un puerto distinto.
+
+Ejemplo:
+
+catálogo → 8081
+reportes → 8082
+usuarios → 8083
+
+Si dos usan el mismo puerto, uno fallará.
 
 1.-ms-usuarios: El "directorio". Guarda la información blanda y pública del usuario (nombre, apellido, teléfono, dirección de envío, avatar). 
 
