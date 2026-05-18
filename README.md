@@ -1,6 +1,7 @@
 # Sistema-de-Gestion
 
 Microservicios:
+
 1.-ms-usuarios: El "directorio". Guarda la información blanda y pública del usuario (nombre, apellido, teléfono, dirección de envío, avatar). 
 
 2.-ms-reportes: Analítica para el administrador.
